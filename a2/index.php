@@ -18,7 +18,14 @@
     </header>
 
     <nav>
-      <div>Put website navigation links here</div>
+
+      <div>
+        <button type="button">About us</button>
+        <button type="button">Seats and Prices</button>
+        <button type="button">Now Showing</button>
+        <button type="button">Bookings</button>
+        </div>
+
     </nav>
 
     <main>
