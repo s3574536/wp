@@ -1,30 +1,222 @@
-/* Starting with navigation and buttons! */
 
 
-button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 2.8s; /* Safari */
-  transition-duration: 2.8s;
-  cursor: pointer;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-sherif;
+    background: #000;
 }
 
 
-button {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
+header {
+    padding: 10px 100px;
+    box-sizing: border-box;
+    
+
 }
-  
-button:hover {
-  background-color: #555555;
-  color: white;
+
+header h1{
+    font-size: 8em;
+    margin: 0;
+    padding: 10 200px;
+    color: darkorange;
+    display: inline-block;
+    font-family: "Urban jungle"; 
+    
 }
-  
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section.sec1{
+    background: url(moviecollage.jpg);
+    background-size: cover; 
+}
+
+section.sec2{
+    padding: 100px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+section.sec2 h2{
+    font-size: 3em;
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+}
+
+section.sec2 p1{
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    color:beige;
+}
+
+
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0, .8);
+    border-top: 1px solid rgba(255,255,255, .2);
+    border-bottom: 1px solid rgba(255,255,255, .2);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+}
+
+nav ul li a{
+    display: block;
+    color: beige; 
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+nav ul li a:hover{
+    background: #ff8c00;
+}
+
+nav ul li a.active{
+    background: #ff8c00;
+}
+
+p1{
+    height: 4em; 
+    font-size: 4em;
+    padding: 0 30px;
+    display: flex;
+    align-items:center;
+    color: beige; 
+
+     
+}
+ul1 {
+    height: 4em; 
+    font-size: 1.5em;
+    display: inline-block;
+    align-items:center;
+    color:beige;
+
+}
+table{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+    
+image-resize{
+        height: 300px;
+    }
+}
+table, tr, th, td{
+    padding: 20px;
+    color:beige;
+    border: 1px solid #080808;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: sans-serif;
+    background: linear-gradient(top, #3c3c3c 0, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0, #222222 100%);
+}
+td:hover{
+    background: darkorange;
+}
+
+h2{
+    color: beige;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+h3{
+    color: beige;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+p{
+    color: beige;
+    font-size: 16px;
+    font-family: sans-serif; 
+}
+
+section.sec2 li{
+    color: beige;
+    font-size: 18px;
+    font-family: sans-serif;
+    list-style: none;
+}
+section.sec2 img{
+    padding: 30px 0;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, 100px);
+    grid-gap: 1em;
+    padding: 100px;
+
+}
+
+.wrapper > div{
+    background: linear-gradient(top, #3c3c3c 0, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0, #222222 100%);
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background: linear-gradient(top, #3c3c3c 0, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0, #222222 100%);
+}
+.box1{
+    grid-column: 1/2;
+    grid-row: 1/4
+    
+    
+}
+.box2{
+   grid-column: 2/3;
+   grid-row: 1/4;
+   
+    
+}
+.box3{
+    grid-column: 1/3;
+    grid-row: 4/7;
+    align-content: center;
+}
+body3 table{
+    width: 1200px;
+    margin: 20px;
+    text-align: center;
+    table-layout:inherit;
+}
+body3 table, tr, th, td{
+    padding: 20px;
+    color:beige;
+    border: 1px solid #080808;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: sans-serif;
+    background: linear-gradient(top, #3c3c3c 0, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0, #222222 100%);
+}
+body3 th:hover{
+    background: darkorange;
+}
